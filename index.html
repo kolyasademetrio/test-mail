@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toujeo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> common Styles <<< ------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        a {
+            color: inherit;
+        }
+
+        sub,
+        sup {
+            font-size: 50%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .fs12 {
+            font-size: 12px;
+        }
+
+        .fs14 {
+            font-size: 14px;
+        }
+
+        .fs16 {
+            font-size: 16px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> common Styles End <<<---------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;;
+            color: #737373;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            min-width: 100% !important;
+        }
+
+        .wrapperMain {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        @media ( max-width: 600px ) {
+            .wrapperMain {
+                max-width: 100%;
+            }
+        }
+
+        .clickHere {
+            font-weight: bold;
+            padding: 0 0 0 30px;
+            font-size: 14px;
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> headerTop <<<------------------------------------------------------ */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .headerTop {
+            padding: 14px 10px 2px 10px;
+        }
+
+        .headerTop__inner {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .headerTop__inner .column {
+            padding-top: 7px;
+            padding-bottom: 3px;
+            background-color: #fff;
+        }
+
+        .headerTop__inner .column:first-child {
+            width: 135px;
+        }
+
+        .headerTop__inner .column:nth-child(2),
+        .headerTop__inner .column:nth-child(3) {
+            width: 115px;
+        }
+
+        .headerTop__inner a {
+            font-size: 14px;
+            padding-right: 15px;
+            padding-left: 19px;
+            text-decoration: none;
+            color: #009bc3;
+        }
+
+        .headerTop__inner .column:first-child a,
+        .headerTop__inner .column:nth-child(2) a {
+            border-right: 1px solid #009bc3;
+        }
+
+        .headerTop__inner .column:last-child {
+            background-color: #fff;
+            margin: 10px 0 0;
+        }
+
+        .headerTop__inner .column:last-child img {
+            margin: 0 10px;
+        }
+
+        @media ( max-width: 550px ) {
+            .headerTop__inner .column {
+                display: block;
+                width: 100% !important;
+                text-align: center;
+            }
+
+            .headerTop__inner a {
+                display: block;
+                border: 0 none !important;
+            }
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> headerTop End <<<-------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> headerBottom <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .headerBottom {
+            padding: 0 10px;
+        }
+
+        .headerBottom__inner {
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .headerBottom__inner a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #009bc3;
+            line-height: 1.2;
+        }
+
+        .headerBottom__inner .column:first-child {
+            width: 150px;
+            padding: 19px 0 13px 9px;
+        }
+
+        .headerBottom__inner .column:nth-child(2) {
+            width: 235px;
+        }
+
+        .footerBottom__textWrap {
+            margin: 12px 0 0;
+            border-left: 1px solid #d6d6d6;
+            padding: 9px 0 9px 20px;
+        }
+
+        .footerBottom__textWrap>div:not(:last-child) {
+            margin: 0 0 7px 0;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> headerBottom End <<<----------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> mainInfo <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .mainInfo {
+            padding: 0 10px;
+        }
+
+        .mainInfo__inner {
+            padding: 45px 0 0;
+            background:url("img/patient.jpg") no-repeat right top;
+            width: 580px;
+            height: 343px;
+        }
+
+        .mainInfo__space {
+            width: 180px;
+        }
+
+        .mainInfo__patient {
+            padding: 0 0 0 24px;
+            font-size: 24px;
+            height: 117px;
+            color: #490066;
+            font-family: 'Muli', sans-serif;
+        }
+
+        .mainInfo__wrapText {
+            padding: 33px 0 0 30px;
+        }
+
+        .mainInfo__text {
+            font-size: 18px;
+            color: #fff;
+            background-color: #009cb0;
+            border-bottom: 4px solid #006673;
+            padding: 7px 13px;
+            font-family: 'Muli', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .mainInfo__arrow {
+            width: 30px;
+            background-color: #009cb0;
+            border-bottom: 4px solid #006673;
+        }
+
+        .mainInfo__arrow img {
+            position: relative;
+            top: 4px;
+        }
+
+        .mainInfo__bottomInner {
+            padding-left: 30px;
+        }
+
+        .mainInfo__bottomInner>table:nth-child(1) tr td {
+            color: #490066;
+            font-family: 'Muli', sans-serif;
+            font-weight: bold;
+            padding: 13px 0 7px;
+            font-size: 22px;
+        }
+
+        .mainInfo__bottomInner>table:nth-child(2) tr {
+            height: 21px;
+        }
+
+        .mainInfo__bottomInner>table:nth-child(2) tr>td:nth-child(2) {
+            font-size: 14px;
+            padding: 0 0 0 10px;
+        }
+
+        .mainInfo__bottomInner>table:nth-child(3) {
+            padding: 2px 0;
+        }
+
+        .mainInfo__bottomInner>table:nth-child(3) tr>td {
+            border-top: 3px solid #98cf7a;
+            border-bottom: 3px solid #98cf7a;
+            color: #000;
+            padding: 11px 0 11px 2px;
+            font-size: 16px;
+            font-weight:  bold;
+        }
+
+        .square {
+            width: 7px;
+            height: 7px;
+            background-color: #98e376;
+        }
+
+        @media ( max-width: 600px ) {
+            .mainInfo__inner {
+                background-repeat: no-repeat;
+                width: 100%;
+                height: auto;
+                min-height: 343px;
+            }
+
+            .mainInfo {
+                padding: 0;
+            }
+
+            .mainInfo__patient {
+                padding-left: 10px;
+                font-size: 18px;
+            }
+        }
+
+        @media ( max-width: 480px ) {
+            .mainInfo__bottomInner {
+                padding-top: 55px;
+            }
+        }
+
+        @media ( max-width: 450px ) {
+            .mainInfo__patient {
+                font-size: 12px;
+                padding-right: 20px;
+                padding-left: 5px;
+                line-height: 1.3;
+            }
+
+            .mainInfo__text {
+                font-size: 12px;
+                padding: 7px 3px 7px 10px;
+            }
+
+            .mainInfo__wrapText {
+                padding-top: 33px;
+                padding-left: 10px;
+            }
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> mainInfo End <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> textInfo <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .textInfo {
+            padding: 15px 30px 0;
+            font-size: 18px;
+            font-family: 'Muli', sans-serif;
+            line-height: 1.1;
+            font-weight: bold;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> textInfo End <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> percentage <<<----------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .percentage__inner {
+            padding: 8px 30px 0 30px;
+        }
+
+        .percentage__inner>tbody>tr:first-child>td {
+            width: 600px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #98cf7a;
+            font-size: 18px;
+            padding: 7px 8px;
+        }
+
+        .percentage__inner>tbody>tr:nth-child(2)>td.column {
+            width: 300px;
+            background-color: #fff;
+            padding: 8px 0;
+        }
+
+        .percentage__inner>tbody>tr:nth-child(2)>td.column>table>tbody>tr>td:first-child {
+            text-align: right;
+            font-size: 36px;
+            font-weight: 900;
+            padding: 0 5px 0 0;
+        }
+
+        .percentage__inner>tbody>tr:nth-child(2)>td.column:first-child>table {
+            color: #511c74;
+        }
+
+        .percentage__inner>tbody>tr:nth-child(2)>td.column:nth-child(2)>table {
+            color: #9a9c9f;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> percentage End <<<------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> note <<<----------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .note {
+            padding: 12px 30px 5px;
+            font-size: 10px;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> note End <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> list <<<----------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .list {
+            color: #000;
+            padding: 0 30px;
+        }
+
+        .list__inner {
+            padding: 0 0 4px;
+            line-height: 1.1;
+        }
+
+        .list__inner tr>td:first-child {
+            padding: 4px 0 0 0;
+        }
+
+        .list__inner tr>td:nth-child(2) {
+            font-size: 14px;
+            padding: 0 0 0 10px;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> list End <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> infoBlock <<<------------------------------------------------------ */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .infoBlock {
+            padding: 5px 30px 9px;
+            color: #000;
+            font-size: 14px;
+            line-height: 1.1;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> infoBlock End <<<-------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> readFull <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .readFull {
+            padding: 0 30px 15px;
+        }
+
+        .readFull a {
+            font-weight: bold;
+            font-size: 14px;
+            color: #009db1;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> readFull End <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> seeEdition <<<----------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .seeEdition {
+            padding: 0 15px 10px;
+        }
+
+        .seeEdition__inner {
+            width: 100%;
+        }
+
+        .seeEdition__inner td.column {
+            padding: 0 0 15px 0;
+        }
+
+        .seeEdition__button {
+            font-size: 14px;
+            font-family: 'Muli', sans-serif;
+            color: #009db1;
+            background-color: white;
+            border-bottom: 4px solid #0095a8;
+            height: 42px;
+            padding-left: 10px;
+            width: 97%;
+            height: 42px;
+        }
+
+        .seeEdition__button td:nth-child(2) {
+            padding: 0 7px;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> seeEdition End <<<------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> register <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .register {
+            padding: 0 45px 10px;
+        }
+
+        .register__inner {
+            width: 100%;
+            background-color: #fff;
+            padding: 0 0 18px;
+        }
+
+        .register__inner>tbody>tr:first-child>td {
+            font-weight:  bold;
+            font-family: 'Muli', sans-serif;
+            text-align: center;
+            font-size: 18px;
+            padding: 17px 0 9px;
+        }
+
+        .register__inner>tbody>tr:nth-child(2)>td.column:first-child {
+            width: 200px;
+        }
+
+        .register__inner>tbody>tr:nth-child(2)>td.column:first-child>img {
+            padding: 5px 0 0 25px;
+        }
+
+        .register__inner>tbody>tr:nth-child(2)>td.column:nth-child(2) {
+            padding: 18px 0 0 18px;
+        }
+
+        .register__inner>tbody>tr:nth-child(2)>td.column:nth-child(2)>table {
+            font-size: 17px;
+            font-family: 'Muli', sans-serif;
+            color: white;
+            background-color: #009db1;
+            border-bottom: 4px solid #0095a8;
+            height: 42px;
+            padding: 0 0 0 17px;
+        }
+
+        .register__inner>tbody>tr:nth-child(2)>td.column:nth-child(2)>table td:nth-child(2) {
+            padding: 0 14px;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> register End <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> registerNote <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .registerNote {
+            padding: 0 45px 18px;
+            font-size: 10px;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> registerNote End <<<----------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> textarea <<<------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .textarea__inner {
+            padding: 0 30px;
+            line-height: 1.2;
+        }
+
+        .textarea__inner>tbody>tr>td {
+            padding: 0 0 10px;
+        }
+
+        .textarea__title {
+            color: #490066;
+            font-size: 18px;
+            margin: 0;
+            padding-bottom: 11px;
+            font-weight: bold;
+        }
+
+        .textarea__subtitle {
+            margin: 0;
+            font-size: 16px;
+            padding: 0 0 7px;
+            font-weight: bold;
+        }
+
+        .textarea__subtitle.paddingBottom0 {
+            padding-bottom: 0;
+        }
+
+        .textarea__note {
+            font-size: 10px;
+            padding-bottom: 50px;
+            color: black;
+        }
+
+        .textarea__link {
+            color: #511073;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> textarea End <<<--------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> footer <<<--------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+        .footer {
+            padding: 0 15px 90px;
+        }
+
+        .footer__inner {
+            background-color: #fff;
+            font-size: 14px;
+        }
+
+        .footer__inner a {
+            color: #0099c1;
+        }
+        /* ---------------------------------------------------------------------------------------------------- */
+        /* ----------------------------->>> footer End <<<----------------------------------------------------- */
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        @media only screen and (max-width: 450px) {
+            td[class="column"] {
+                display: block;
+                width: 100%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            .wrapperMain td.column {
+                background-color: transparent;
+            }
+
+            td.column a {
+                border: none !important;
+            }
+
+            table.seeEdition__inner {
+                padding: 0 45px;
+            }
+
+            table[class="mob-full-width"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<table class="wrapperMain" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="clickHere">
+            <a href="#">Click here</a> to get free sample delivery to your door.
+        </td>
+    </tr>
+    <tr>
+        <td class="headerTop">
+            <table class="headerTop__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="column" align="left" valign="top">
+                        <a href="#">View in browser</a>
+                    </td>
+                    <td class="column" align="left" valign="top">
+                        <a href="#">ToujeoPro.com</a>
+                    </td>
+                    <td class="column" align="left" valign="top">
+                        <a href="#">Unsubscribe</a>
+                    </td>
+                    <td class="column" align="right" valign="top">
+                        <img src="img/sanofi.jpg" alt="">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="headerBottom">
+            <table class="headerBottom__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="column" align="left" valign="top">
+                        <img src="img/toujeo.jpg" alt="">
+                    </td>
+                    <td class="column" align="left" valign="top">
+                        <div class="footerBottom__textWrap">
+                            <div>
+                                <a href="#">Read Indication and<br>Full Important Safety Information</a>
+                            </div>
+                            <div>
+                                <a href="#">Full Prescribing Information</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="mainInfo">
+            <table class="mainInfo__inner" cellpadding="0" cellspacing="0">
+                <tr class="mainInfo__top">
+                    <td class="mainInfo__patient">
+                        Significant A1C reduction and demonstrated safety in a board range of adoult patient
+                    </td>
+                    <td class="mainInfo__space"></td>
+                </tr>
+                <tr class="mainInfo__middle">
+                    <td class="mainInfo__wrapText">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mainInfo__text">
+                                    See the clinical results patients like Ray wereable to achieve on
+                                    Toujeo<sup>&reg;</sup></td>
+                                <td class="mainInfo__arrow">
+                                    <img src="img/arrow.jpg" alt="arrow"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="mainInfo__bottom">
+                    <td colspan="2" class="mainInfo__bottomInner">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    Meet Ray...
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <div class="square"></div>
+                                </td>
+                                <td>48-year-old insulin-naive patient with
+                                    T2DM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="square"></div>
+                                </td>
+                                <td>Plays guitar in a jazz band</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="square"></div>
+                                </td>
+                                <td>Constantly on the go</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    He needs to improve his glycemic control
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="textInfo">
+            In the EDITION 3 study, insulin-naive patients treated with Toujeo<sup>&reg;</sup> achieved signiticant A1C
+            reduction and had a low incidence of severe hypoglycemia
+        </td>
+    </tr>
+    <tr>
+        <td class="percentage">
+            <table class="percentage__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2">Powerful A1C reductions over 26 weeks<sup>1</sup></td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <table align="center" class="mob-full-width" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    -1.42%
+                                </td>
+                                <td class="fs14">Toujeo<sup>&reg;</sup><br>n=432</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="column">
+                        <table align="center" class="mob-full-width" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>-1.46%</td>
+                                <td class="fs12">Lantus<sup>&reg;</sup><br>n=430</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table class="percentage__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2">Demonstrated safety<sup>1</sup></td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <table align="center" class="mob-full-width" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>0.9%</td>
+                                <td class="fs16">Low incidence of severe hypoglycemia<sup>a</sup></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="column">
+                        <table align="center" class="mob-full-width" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>8%</td>
+                                <td class="fs16">Documented symptomatic hypoglycemia<sup>b</sup></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="note">*Severe hypoglycemia: an event requiring assistance of
+            another person to actively administer a resuscitative action.
+        </td>
+    </tr>
+    <tr>
+        <td class="note">Documented symptomatic hypoglycemia: an event with typical
+            symptoms of hypoglycemia accompanied by a self-rnonitored or plasma glucose value s54 mg/dL.
+        </td>
+    </tr>
+    <tr>
+        <td class="list">
+            <table class="list__inner">
+                <tr>
+                    <td>
+                        <div class="square"></div>
+                    </td>
+                    <td>Most common adverse events (with incidence >5%)
+                        with Toujeo® in patients with T2DM were nasopharyngitis (7.1%) and upper respiratory tract
+                        infection (5.7%)<sup>1</sup></td>
+                </tr>
+            </table>
+            <table class="list__inner">
+                <tr>
+                    <td>
+                        <div class="square"></div>
+                    </td>
+                    <td>Incidence of severe hypoglycemia when part of a
+                        multiple-dose injection regimen: 6.6% in T1DM; 5% in T2DM; when part of a basal insulin-only
+                        regimen: 1.0% and 0.9% in two T2DM studies<sup>1</sup></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="infoBlock">
+            <span class="bold">EDITION 3 Study Design:</span> Toujeo<sup>&reg;</sup> was compared with
+            Lantus* in a 26-week, noninferiority, open-label study of 862 insulin-naive adults with T2DM who were not at
+            goal (A1C range: 7%-11%). Patients were randomized to either Toujeo<sup>&reg;</sup> or
+            Lantus<sup>&reg;</sup> once daily as part of a regimen with noninsulin antidiabetic drugs. All patients were
+            titrated to an FPG goal of 80-100 mg/dL, mainly during the first 12 weeks of treatment.<sup>1,2</sup>
+        </td>
+    </tr>
+    <tr>
+        <td class="readFull">
+            <a href="#">Read the full EDITION 3 study
+                abstract at PubMed.gov</a>
+        </td>
+    </tr>
+    <tr>
+        <td class="seeEdition">
+            <table class="seeEdition__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="column">
+                        <table class="seeEdition__button" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>See EDITION 2 data</td>
+                                <td><img src="img/arrow-blue.jpg" alt="arrow"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="column">
+                        <table class="seeEdition__button" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>See EDITION 1 data</td>
+                                <td><img src="img/arrow-blue.jpg" alt="arrow"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="column">
+                        <table class="seeEdition__button" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>See EDITION 4 data</td>
+                                <td><img src="img/arrow-blue.jpg" alt="arrow"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="register">
+            <table class="register__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2">Get free samples of Toujeo quickly and easily.</td>
+                </tr>
+                <tr>
+                    <td class="column"><img src="img/pills.jpg" alt="pills"></td>
+                    <td class="column">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>Register for samples</td>
+                                <td><img src="img/arrow.jpg" alt="arrow"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="registerNote">
+            T2DM, type 2 diabets mellitus. T1DM, type 1 diabetes mellitus, FPG, fasting plasma glucose.
+        </td>
+    </tr>
+    <tr>
+        <td class="textarea">
+            <table class="textarea__inner" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        Toujeo<sup>&reg;</sup> is a long-acting human insulin analog indicated to improve glycemic
+                        control in adults with diabetes mellitus.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Limitations of Use: Toujeo<sup>&reg;</sup> is not recommended for treating diabetic
+                        ketoacidosis.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__title">
+                        Important Safety Information for Toujeo<sup>&reg;</sup> (insulin glargine injection) 300
+                        Units/mL
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__subtitle paddingBottom0">
+                        Contraindications
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Toujeo<sup>&reg;</sup> is contraindicated during episodes of hypoglycemia and in patients
+                        hypersensitive to insulin glargine or any of its excipients.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__subtitle paddingBottom0">
+                        Warnings and Precautions
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Toujeo” contains the same active ingredient, insulin glargine, as LantusThe concentration of
+                        insulin glargine in Toujeo<sup>&reg;</sup> is 300 units per mL.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__subtitle">
+                        Insulin pens and needles must never be shared between patients. Do NOT reuse needles.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Monitor blood glucose in all patients treated with insulin. Modify insulin regimens cautiously
+                        and only under medical supervision. Changes in insulin strength, manufacturer, type, or method
+                        of administration may result in the need for a change in insulin dose or an adjustment in
+                        concomitant oral antidiabetic treatment. Changes in insulin regimen may result in hyperglycemia
+                        or hypoglycemia.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Unit for unit, patients started on, or changed to, Toujeo<sup>&reg;</sup> required a higher dose
+                        than patients controlled with Lantus<sup>&reg;</sup>. When changing from another basal insulin
+                        to Toujeo<sup>®</sup>, patients experienced higher average fasting plasma glucose levels in the
+                        first few weeks of therapy until titrated to their individualized fasting plasma glucose
+                        targets. Higher doses were required in titrate-to-target studies to achieve glucose control
+                        similar to Lantus’’.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hypoglycemia is the most common adverse reaction of insulin therapy, including
+                        Toujeo<sup>&reg;</sup>, and may be life-threatening.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Medication errors such as accidental mix-ups between basal insulin products and other insulins,
+                        particularly rapid-acting insulins, have been reported. Patients should be instructed to always
+                        verify the insulin label before each injection.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do not dilute or mix Toujeo<sup>&reg;</sup> with any other insulin or solution. If mixed or
+                        diluted, the solution may become cloudy, and the onset of action/time to peak effect may be
+                        altered in an unpredictable manner. Do not administer Toujeo via an insulin pump or
+                        intravenously because severe hypoglycemia can occur.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Severe life-threatening, generalized allergy, including anaphylaxis, can occur. Discontinue
+                        Toujeo<sup>®</sup>, monitor and treat if indicated.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        A reduction in the Toujeo<sup>&reg;</sup> dose may be required in patients with renal or hepatic
+                        impairment.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        As with all insulins, Toujeo use can lead to life-threatening hypokalemia. Untreated hypokalemia
+                        may cause respiratory paralysis, ventricular arrhythmia, and death. Closely monitor potassium
+                        levels in patients at risk of hypokalemia and treat if indicated.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fluid retention, which may lead to or exacerbate heart failure, can occur with concomitant use
+                        of thiazolidinediones (TZDs) with insulin. These patients should be observed for signs and
+                        symptoms of heart failure. If heart failure occurs, dosage reduction or discontinuation of TZD
+                        must be considered.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__subtitle paddingBottom0">
+                        Drug Interactions
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Certain drugs may affect glucose metabolism, requiring insulin dose adjustment and close
+                        monitoring of blood glucose. The signs of hypoglycemia may be reduced in patients taking
+                        anti-adrenergic drugs (eg, beta-blockers, clonidine, guanethidine, and reserpine).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__subtitle paddingBottom0">
+                        Adverse Reactions
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Adverse reactions commonly associated with Toujeo include hypoglycemia, allergic reactions,
+                        injection site reactions, lipodystrophy, pruritus, rash, edema and weight gain.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__title">
+                        Important Safety Information for Toujeo<sup>&reg;</sup> (insulin glargine injection) 300
+                        Units/mL SoloStar<sup>&reg;</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Toujeo<sup>&reg;</sup> SoloStar<sup>&reg;</sup> is a disposable prefilled insulin pen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        To help ensure an accurate dose each time, patients should follow all steps in the Instruction
+                        Leaflet accompanying the pen; otherwise they may not get the correct amount of insulin, which
+                        may affect their blood glucose levels.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Do not withdraw Toujeo<sup>&reg;</sup> from the SoloStar2 disposable prefilled pen with a
+                        syringe.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='textarea__link' href="#">Click here for full Prescribing Information.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='textarea__link' href="#">Click here for information on sharps medical waste disposal.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='textarea__link' href="#">Click here to learn more about Sanofi’s commitment to fighting
+                            counterfeit drugs.</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea__note">
+                        <strong>References: 1.</strong> Toujeo Prescribing Information. <strong>2.</strong> Bolfc GB.
+                        Riddle MC. Bergenstal RM, ct al. <i>Diabetes Obes Metab</i> 2015:17(4):386-394.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="footer">
+            <table class="footer__inner" cellspacing="15" cellpadding="0" border="0">
+                <tr>
+                    <td>Pelease do DO NOT REPLY TO THIS EMAIL. Sanofi US will not receive this message if you reply.
+                        Should you have any questions regarding this email or Sanofy US, please contact us at the below
+                        address, toll free number or URL.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sanofy US<br>
+                        55 Corporate Drive<br>
+                        Bridgewater, NJ 08807<br>
+                        Tel: 1-800-981-2491<br>
+                        <a href="#">https://contactus.sanofi.us</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><img src="img\logo_sanofi.jpg" alt="logo"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        This promotional material has been provided to you by Sanofi. You may unsubscribe by
+                        <a href="#">clicking here</a> or by calling 1-800-633-1610
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        © 2018 sanofi-aventis U.S. LLC. All rights reserved.<br>
+                        SAUS.TJO.18.01.0233 <span>01/18</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
